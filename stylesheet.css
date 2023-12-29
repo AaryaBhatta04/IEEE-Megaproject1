@@ -42,6 +42,7 @@ header{
     max-width: 1068px;
     margin:auto;
     width:100%;
+    margin-right: 400px;
 }
 
 .logo{
@@ -60,7 +61,7 @@ section{
     font-size:1 rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 2 rem;
+    margin-bottom: 2rem;
 }
 .shop{
     margin-top:2rem;
@@ -69,4 +70,55 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,auto));
     column-gap: 1.5rem;
+}
+
+.product-box{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.product-img{
+    width: 400px;
+    height: 400px;
+    scroll-behavior: smooth;
+    margin-bottom: 1rem;
+}
+.product-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    color: white;
+    padding 30px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
